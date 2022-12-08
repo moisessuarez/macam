@@ -4,12 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+
+
 
     private EditText ete1,ete2;
 
@@ -18,11 +22,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         ete1 = findViewById(R.id.et1);
         ete2 = findViewById(R.id.et2);
     }
 
-    public void validar(View view){
+       public void validar(View view){
 
         String usuario = ete1.getText().toString();
         String password = ete2.getText().toString();
@@ -40,6 +45,12 @@ public class MainActivity extends AppCompatActivity {
     public void registro(View view){
 
         Intent i = new Intent(this,Registro.class);
+        startActivity(i);
+    }
+
+    public void contrasena(View view){
+
+        Intent i = new Intent(this,RecuperarContrasena.class);
         startActivity(i);
     }
 

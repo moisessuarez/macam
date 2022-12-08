@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_login"
+    tools:context=".RecuperarContrasena">
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="204dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#E53935"
+        android:background="@drawable/boton_redondo"
+        android:drawableLeft="@drawable/ic_baseline_how_to_reg_24"
+        android:text="Registrarse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.486" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="290dp"
+        android:layout_height="57dp"
+        android:background="@drawable/boton_redondo"
+        android:ems="10"
+        android:hint="ingresa tu email"
+        android:inputType="textPersonName"
+        android:textColorHint="#8A100909"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.836" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="180dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#E53935"
+        android:background="@drawable/boton_redondo"
+        android:drawableLeft="@drawable/ic_baseline_keyboard_double_arrow_left_24"
+        android:onClick="volveraregistro"
+        android:text="Volver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
